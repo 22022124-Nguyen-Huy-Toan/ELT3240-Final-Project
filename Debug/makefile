@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (12.3.rel1)
+# Toolchain: GNU Tools for STM32 (13.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := test_i2c
+BUILD_ARTIFACT_NAME := ELT3240-Final-Project
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-test_i2c.elf \
+ELT3240-Final-Project.elf \
 
 MAP_FILES += \
-test_i2c.map \
+ELT3240-Final-Project.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-test_i2c.list \
+ELT3240-Final-Project.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: test_i2c.elf secondary-outputs
+main-build: ELT3240-Final-Project.elf secondary-outputs
 
 # Tool invocations
-test_i2c.elf test_i2c.map: $(OBJS) $(USER_OBJS) C:\Users\DELL\Downloads\test\test_i2c\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "test_i2c.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\DELL\Downloads\test\test_i2c\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_i2c.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ELT3240-Final-Project.elf ELT3240-Final-Project.map: $(OBJS) $(USER_OBJS) D:\Ky\ II\ nam\ 3\NMHTN\ELT3240-Final-Project\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ELT3240-Final-Project.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Ky II nam 3\NMHTN\ELT3240-Final-Project\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ELT3240-Final-Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-test_i2c.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "test_i2c.list"
+ELT3240-Final-Project.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "ELT3240-Final-Project.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) default.size.stdout test_i2c.elf test_i2c.list test_i2c.map
+	-$(RM) ELT3240-Final-Project.elf ELT3240-Final-Project.list ELT3240-Final-Project.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
