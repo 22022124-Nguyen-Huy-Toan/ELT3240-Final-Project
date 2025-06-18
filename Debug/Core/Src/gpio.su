@@ -1,0 +1,5 @@
+../Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
+../Core/Src/gpio.c:12:6:TIM4_Init	8	static
+../Core/Src/gpio.c:21:6:Buttons_Init	8	static
+../Core/Src/gpio.c:41:6:GPIO_Init	4	static
+../Core/Src/gpio.c:54:6:ADC_Init	4	static
